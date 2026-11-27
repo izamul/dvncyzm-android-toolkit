@@ -1,0 +1,21 @@
+dvncyzm untuk macOS
+===================
+
+Pasang:
+  1. Klik dua kali  install.command
+     (bila macOS menolak karena "pengembang tidak dikenal": klik kanan > Buka > Buka)
+     Alternatif: buka Terminal, lalu:  bash install.command
+  2. Tunggu sampai muncul "Selesai". Butuh internet (sekitar 150-250 MB).
+  3. Buka dvncyzm dari Launchpad atau Spotlight.
+
+Yang dilakukan pemasang:
+  - Memasang aplikasi ke ~/.dvncyzm dan membuat ~/Applications/dvncyzm.app
+  - Mengunduh Node.js sementara bila belum ada (dihapus setelah selesai, tidak memasang apa pun ke sistem)
+  - Mengunduh Electron
+  - Mengunduh Android Platform-Tools (adb) resmi dari Google bila adb belum ada
+  - Menawarkan scrcpy lewat Homebrew (opsional)
+
+Tidak perlu hak administrator. Tidak mengubah PATH atau pengaturan sistem.
+
+Copot: bash ~/.dvncyzm/uninstall.command
+Masalah: bila adb tidak ditemukan, pilih lokasinya di tab Pengaturan.

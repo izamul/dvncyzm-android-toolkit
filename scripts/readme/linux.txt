@@ -1,0 +1,23 @@
+dvncyzm untuk Linux
+===================
+
+Pasang:
+  1. Buka terminal di folder ini, lalu:  bash install.sh
+  2. Tunggu sampai muncul "Selesai". Butuh internet (sekitar 150-250 MB).
+  3. Buka "dvncyzm" dari menu aplikasi, atau jalankan ~/.local/bin/dvncyzm
+
+Yang dilakukan pemasang:
+  - Memasang aplikasi ke ~/.local/share/dvncyzm-app, peluncur di ~/.local/bin, dan entri menu aplikasi
+  - Mengunduh Node.js sementara bila belum ada (dihapus setelah selesai)
+  - Mengunduh Electron
+  - Mengunduh Android Platform-Tools (adb) resmi dari Google bila adb belum ada
+  - Menawarkan (dengan sudo, hanya bila Anda setuju): alat build untuk tab Shell, scrcpy, aturan udev USB
+
+Catatan:
+  - Aplikasi dijalankan dengan --no-sandbox karena banyak distro menolak sandbox Chromium
+    tanpa konfigurasi root. Aplikasi hanya memuat berkas lokalnya sendiri, bukan situs luar.
+  - Tab Shell butuh make, g++, dan python3 saat pemasangan. Tanpa itu, tab Shell nonaktif, fitur lain normal.
+  - Perangkat USB: butuh aturan udev (paket android-sdk-platform-tools-common di Ubuntu/Debian).
+    Lewat Wi-Fi tidak perlu.
+
+Copot: bash ~/.local/share/dvncyzm-app/uninstall.sh

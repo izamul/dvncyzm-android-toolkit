@@ -1,0 +1,21 @@
+dvncyzm untuk Windows
+=====================
+
+Pasang:
+  1. Klik dua kali  install.bat
+     (bila muncul "Windows protected your PC": More info > Run anyway)
+  2. Tunggu sampai muncul "Selesai". Butuh internet (sekitar 150-250 MB).
+  3. Buka dvncyzm dari Start Menu atau pintasan di Desktop.
+
+Yang dilakukan pemasang:
+  - Memasang aplikasi ke %LOCALAPPDATA%\dvncyzm-app dan membuat pintasan
+  - Mengunduh Node.js sementara bila belum ada (dihapus setelah selesai)
+  - Mengunduh Electron
+  - Mengunduh Android Platform-Tools (adb) resmi dari Google bila adb belum ada
+  - Memasang scrcpy lewat winget bila tersedia (opsional)
+
+Tidak perlu hak Administrator.
+Driver USB: perangkat tertentu butuh driver dari pabrikannya (atau Google USB Driver).
+Lewat Wi-Fi tidak perlu driver.
+
+Copot: jalankan %LOCALAPPDATA%\dvncyzm-app\uninstall.bat

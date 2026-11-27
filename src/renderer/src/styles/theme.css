@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ECEEEA; --rail: #F7F8F5; --card: #FFFFFF; --border: #D3D7D1; --border-input: #C3C8C1;
+  --ink: #16201C; --ink-2: #4F5B55; --accent: #2B59E0; --ok: #1F7A45; --warn: #9A5B00; --err: #B3261E;
+  --crash-bg: #FCEDEB;
+}
+:root.dark {
+  --bg: #0E1210; --rail: #141917; --card: #1B211E; --border: #26302B; --border-input: #36423C;
+  --ink: #E6EBE8; --ink-2: #9CA8A2; --accent: #5B84FF; --ok: #6FD39A; --warn: #F0B65A; --err: #FF8A7A;
+  --crash-bg: #3A1714;
+}
+html, body, #app { height: 100%; }
+body { background: var(--bg); color: var(--ink); font-family: 'IBM Plex Sans', system-ui, sans-serif; margin: 0; }
+.drag { -webkit-app-region: drag; }
+.no-drag { -webkit-app-region: no-drag; }
+button { cursor: pointer; }

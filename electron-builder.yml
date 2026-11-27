@@ -1,0 +1,22 @@
+appId: id.dvncyzm.app
+productName: dvncyzm
+directories:
+  buildResources: build
+files:
+  - out/**
+  - package.json
+asarUnpack:
+  - node_modules/node-pty/**
+npmRebuild: true
+mac:
+  category: public.app-category.developer-tools
+  target:
+    - target: dmg
+      arch: [arm64, x64]
+  # tanpa sertifikat Developer ID: dmg tidak ditandatangani (klik kanan > Buka saat pertama kali)
+  identity: null
+win:
+  target: nsis
+linux:
+  target: AppImage
+  category: Development
